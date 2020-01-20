@@ -1,29 +1,21 @@
 package udemy;
 
 public class BarkingDog {
-	
-	public static void shouldWakeUp(boolean barking, int hourOfDay) {
-		
-		
-		if(barking==true) {
-			
-			if((hourOfDay<8 || hourOfDay>22 )&& (hourOfDay>0 || hourOfDay<=23)) {
-				
-				
-				System.out.println(true);
-			
-			}
-			else {
-				System.out.println(false);
-				
-		
-			}
-		}else {
-			
-		   System.out.println(false);}
-		}
-	
-		
+	 
+    public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
+ 
+        if (barking == true && (hourOfDay < 8 || hourOfDay > 22)) {
+           if(hourOfDay<0||hourOfDay>23){
+               return false;
+           }
+           return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+
 
 	public static void main(String[] args) {
 		
