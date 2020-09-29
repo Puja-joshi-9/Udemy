@@ -1,0 +1,30 @@
+package assignment5;
+
+import java.util.Scanner;
+
+public class IsPalindrome {
+	public static void main(String[] args) {
+
+		int num, reverse = 0, temp;
+
+		System.out.println("Enter the number:");
+		Scanner sc = new Scanner(System.in);
+
+		num = sc.nextInt();
+		temp = num;
+
+		while (num != 0) {
+			reverse = reverse * 10;
+			reverse = reverse + num % 10;
+			num = num / 10;
+
+		}
+
+		if (reverse == temp)
+			System.out.println("True");
+		else
+			System.out.println("False");
+
+	}
+
+}

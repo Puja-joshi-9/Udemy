@@ -6,8 +6,12 @@ public class SharedDigit {
 		
 		if((a<10 || a>99)&&( b<10 || b>99 )) {
 			
+			return false;
+		}else {
 			
+			if()
 		}
+			
 		
 	}
 	

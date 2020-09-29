@@ -1,4 +1,4 @@
-package assignment5;
+package assignment3;
 
 import java.util.Scanner;
 
@@ -17,7 +17,9 @@ public class LargestNumber {
 		value1= a>b ? a:b;
 		value2=value1>c ? value1:c;
 		
+	
 		System.out.println("The largest number among "+a+","+b+" and "+c+" is "+value2+".");
+		sc.close();
 	}
 
 }
